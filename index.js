@@ -13,8 +13,19 @@
 // *REACT* - aka the real way
 // Dont worry about the second argument
 
-// Make the thing 
-let hello = React.createElement("h1", null, "hello react!");
+const h = React.createElement;
 
-    // Draw the thing to the screen
-ReactDOM.render(hello, document.querySelector("[data-root]"));
+
+// Make the thing 
+let title = h("h1", null, "Kebabs");
+let item = h("li", null, "chicken hearts");
+let list = h("ul", null, item);
+
+
+let main = h("div", null, [
+    title, 
+    list
+]);
+
+// Draw the thing to the screen
+ReactDOM.render(main, document.querySelector("[data-root]"));
