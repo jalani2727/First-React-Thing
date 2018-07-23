@@ -14,5 +14,5 @@ import "./index.css"
         console.log("Hello from the box!");
     }
 
-// function components don't render things (for now?)
+// function components don't render things (are there situations in which they can/should?)
 export default Box;
